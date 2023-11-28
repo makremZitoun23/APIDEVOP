@@ -53,8 +53,8 @@ jobs:
     - name: Build and deploy Container App
       uses: azure/container-apps-deploy-action@v1
       with:
-        registryUrl: https://registry.hub.docker.com/v2/
-        imageToDeploy: https://registry.hub.docker.com/v2/${{ env.IMAGE_NAME }}:${{ github.run_number }}
+        registryUrl: registry.hub.docker.com
+        imageToDeploy: registry.hub.docker.com/${{ env.IMAGE_NAME }}:${{ github.run_number }}
         targetPort: 3500
         ingress: external
         containerAppName: ${{ env.CONTAINERAPPS_APP }}
