@@ -2,7 +2,7 @@
 name: Build and deploy a container to an Azure Container Apps - ACA
 
 env:
-  IMAGE_NAME: makremzitoun/devopsrepo/api
+  IMAGE_NAME: makremzitoun/devopsrepo
   CONTAINERAPPS_APP: album-backend-api
   CONTAINERAPPS_ENVIRONMENT: aca-environment
   RESOURCE_GROUP: rg-containerapps-github-actions
